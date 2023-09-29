@@ -12,8 +12,7 @@ import {
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-
+} from "@/components/ui/dropdown-menu"
 
 type Props = {};
 
@@ -40,11 +39,16 @@ const NavBar = (props: Props) => {
             </div>
             <div className='lg:hidden flex flex-row justify-end w-full pr-16'>
                 <DropdownMenu>
-                    <DropdownMenuTrigger><FontAwesomeIcon icon={faBars} className='text-orange-600 h-7 hover:text-opacity-80'/></DropdownMenuTrigger>
+                    <DropdownMenuTrigger><FontAwesomeIcon icon={faBars} spin className='text-orange-600 h-7 hover:text-opacity-80 border-none'/></DropdownMenuTrigger>
                     <DropdownMenuContent className='flex flex-col items-center bg-customlightGray text-white'>
                         <DropdownMenuLabel>Hello There!</DropdownMenuLabel>
                         <DropdownMenuSeparator className='w-full h-px bg-white my-2' /> 
-                        {linkTexts.map((linkText,index)=>(<DropdownMenuItem key={linkText} className='hover:bg-orange-600 w-full justify-center' >{linkText}</DropdownMenuItem>
+                            {NavLinks.map((navLink,index)=>(
+                             <Link href={navLink} className='w-full rounded-3xl'>
+                            <DropdownMenuItem key={index} className='justify-center w-full'>
+                                {linkTexts[index]}
+                            </DropdownMenuItem>
+                            </Link>   
                         ))}
                     </DropdownMenuContent>
                 </DropdownMenu>
