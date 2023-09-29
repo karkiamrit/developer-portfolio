@@ -1,9 +1,11 @@
-import Image from 'next/image'
+import React from 'react'
 
-export default function Home() {
+type Props = {}
+
+function page({}: Props) {
   return (
-    <div className='flex flex-column'>
-      
-    </div>
+    <div>page</div>
   )
 }
+
+export default page
