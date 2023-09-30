@@ -45,7 +45,7 @@ const NavBar = (props: Props) => {
                         <DropdownMenuSeparator className='w-full h-px bg-white my-2' /> 
                             {NavLinks.map((navLink,index)=>(
                              <Link href={navLink} className='w-full rounded-3xl'>
-                            <DropdownMenuItem key={index} className='justify-center w-full'>
+                            <DropdownMenuItem key={navLink} className='justify-center w-full'>
                                 {linkTexts[index]}
                             </DropdownMenuItem>
                             </Link>   

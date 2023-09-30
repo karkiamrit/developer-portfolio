@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
  
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -73,4 +74,15 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/path/to/crimson-text.woff2') format('woff2');
+}
+
+body {
+  font-family: 'Crimson Text', sans-serif;
 }
