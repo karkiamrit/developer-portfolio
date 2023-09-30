@@ -11,7 +11,7 @@ type Props = {}
 function HeroSection({ }: Props) {
     return (
         <div className={crimson.className}>
-        <div className="relative h-full flex items-center">
+        <div className="relative hero h-full flex items-center">
             {/* Vertical Lines */}
             {Array.from({ length: 20 }).map((_, index) => (
                 <div
