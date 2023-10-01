@@ -64,7 +64,7 @@ function ServicesSection({ }: Props) {
             <CardHeader>
               <CardTitle className='flex flex-row mb-2 mt-7 text-orange-600 text-4xl font-medium h-12'>
                   Cloud
-                  <Button className='rounded-full h-14 w-14 ml-36 -mt-3 bg-gray-300 bg-opacity-10'>
+                  <Button className='rounded-full h-14 w-14 ml-44 -mt-3 bg-gray-300 bg-opacity-10'>
                     <FontAwesomeIcon icon={faArrowRight} className='text-white h-6 transform -rotate-45'/>
                   </Button>
               </CardTitle>

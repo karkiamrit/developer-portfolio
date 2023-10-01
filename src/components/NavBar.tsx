@@ -21,7 +21,7 @@ const NavBar = (props: Props) => {
     const linkTexts = ['Home', 'About', 'Contact', 'Portfolio'];
 
     return (
-        <div className='relative flex flex-row  text-white bg-customGray h-16 lg:h-20 '>
+        <div className='sticky top-0 flex flex-row z-50 text-white bg-customGray h-16 lg:h-20'>
             <div className='absolute lg:left-48 left-12 items-start pt-3 lg:pt-5'>
                 <Link href='/about'>
                 <Image src='/images/navigation/logo.png' alt='Logo' width={30} height={30} />

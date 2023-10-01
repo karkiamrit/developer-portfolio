@@ -86,3 +86,15 @@
 body {
   font-family: 'Crimson Text', sans-serif;
 }
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+/* .slick-slide {
+      margin: 0 2px;
+  } */
+
+  /* the parent */
+  .slick-list {
+      margin: 0 100px;
+  }
