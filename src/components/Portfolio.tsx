@@ -86,7 +86,7 @@ const Portfolio = (props: Props) => {
           <h1 className='float-right text-5xl text-orange-600 mt-5'> my Portfolio</h1>
         </div>
         <div>
-          <CustomButtonGroup content='View All My Work'/>
+          <CustomButtonGroup mainbuttonColor='white' subbuttonColor='#3D3F3C' iconTextColor={'white'} content='View All My Work'/>
         </div>
       </div>
 

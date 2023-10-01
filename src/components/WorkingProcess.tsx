@@ -18,7 +18,7 @@ const WorkingProcess = (props: Props) => {
                 </h1>
             </div>
             <div className='flex flex-row gap-4 text-2xl mt-10 font-semibold '>
-                <div className='flex flex-col justify-center gap-2 ml-48 '>
+                <div className='flex flex-col justify-center gap-2 ml-44 '>
                     <Button className='w-16 h-16 ml-36 rounded-full bg-customGray'>
                         <FontAwesomeIcon icon={faLightbulb} fade className='text-3xl w-20'/>
                     </Button>

@@ -3,7 +3,7 @@ import React from 'react'
 import { Button } from './ui/button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCodeBranch, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
-import FormCard from './ui/Card/FormCard'
+import FormCard from './ui/card/FormCard'
 
 type Props = {}
 
@@ -13,7 +13,7 @@ const Contact = (props: Props) => {
         <div id='contact' className='contact relative mt-52 '>
             <div className='flex flex-row'>
                 <div>
-                    <div className='flex flex-row ml-48'>
+                    <div className='flex flex-row ml-48 mt-32'>
                         <div className='flex flex-col'>
                             <div className='flex flex-row text-4xl gap-2 font-medium'>
                                 <h1 className='text-gray-800'>Let's</h1>
@@ -25,7 +25,7 @@ const Contact = (props: Props) => {
                         </div>
                     </div>
                     <div className='flex flex-col ml-48'>
-                        <div className='flex flex-row mt-5'>
+                        <div className='flex flex-row mt-8'>
                             <Button variant='secondary' className='rounded-full h-12 w-12 bg-gray-100 pointer-events-none'>
                                 <FontAwesomeIcon icon={faPhone} className='text-orange-500 h-5' />
                             </Button>
@@ -51,7 +51,7 @@ const Contact = (props: Props) => {
                         </div>
                     </div>
                 </div>
-                <div className='ml-24 bg-customlightGray w-[700px] rounded-[40px] bg-opacity-5'>
+                <div className='ml-[70px] bg-customlightGray w-[700px] rounded-[40px] bg-opacity-5'>
                     <FormCard />
                 </div>
             </div>
