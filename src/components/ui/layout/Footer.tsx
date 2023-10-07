@@ -73,7 +73,7 @@ const Footer = () => {
             </div>
             <Separator className="mt-10 w-[1160px] bg-customlightGray h-[2px] ml-48" />
             <div className="flex flex-row pb-10">
-                <p className="text-gray-300 ml-48 mt-10 flex flex-row gap-2">Copyright © 2023 <p className="text-orange-500">Amrit.</p> All Rights Reserved.</p>
+                <h2 className="text-gray-300 ml-48 mt-10 flex flex-row gap-2">Copyright © 2023 <p className="text-orange-500">Amrit.</p> All Rights Reserved.</h2>
                 <p className="text-gray-300 ml-[510px] mt-10">User Terms & Conditions | Privacy Policy</p>
             </div>
         </div>
