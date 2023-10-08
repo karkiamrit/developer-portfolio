@@ -32,12 +32,12 @@ function HeroSection() {
 
             {/*hero section content begins here */}
             <div className="z-10 text-white text-4xl font-bold">
-                <div className="relative flex flex-row justify-start text-white">
-                    <Button size="lg" variant={"outline"} className="ml-48 rounded-full border-customGray h-12 text-lg font-sans mt-24 flex flex-row ">
+                <div className="relative flex flex-col justify-center lg:flex lg:flex-row lg:justify-start text-white">
+                    <Button size="lg" variant={"outline"} className="ml-48 rounded-full border-customGray h-12 text-lg font-sans mt-24 lg:flex lg:flex-row ">
                         Hello!
                     </Button>
                 </div>
-                <h1 className="text-orange-500 flex flex-row ml-48 mt-10 font-semibold text-6xl">I"m Amrit,</h1>
+                <h1 className="text-orange-500 flex flex-row ml-48 mt-10 font-semibold text-6xl">I'm Amrit,</h1>
                 <h2 className="text-customGray flex flex-row ml-48 mt-8 text-5xl">Full Stack Developer </h2>
                 <h2 className="text-customGray flex flex-row ml-48 mt-8 text-5xl">based in Nepal.</h2>
                 <p className="flex flex-row ml-48 mt-8 text-base font-medium font-sans text-gray-500 w-4/12"> 
@@ -53,7 +53,7 @@ function HeroSection() {
                         Hire Me
                 </Button>
                 </div> 
-                <Image src="/images/hero/profileimg.png" alt="Hero" width={600} height={600} className="absolute right-0 bottom-0 top-20 mr-36" />
+                <Image src="/images/hero/profileimg.png" alt="Hero" width={600} height={600} className="lg:absolute lg:right-0 lg:bottom-0 lg:top-20 lg:mr-36 -ml-7 " />
               
                 
     
