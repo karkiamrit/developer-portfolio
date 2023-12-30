@@ -35,6 +35,7 @@ const Portfolio = () => {
           {
             breakpoint: 600,
             settings: {
+              vertical:true,
               slidesToShow: 2,
               slidesToScroll: 1,
               initialSlide: 2
@@ -43,6 +44,7 @@ const Portfolio = () => {
           {
             breakpoint: 480,
             settings: {
+              vertical:true,
               slidesToShow: 1,
               slidesToScroll: 1
             }
@@ -73,40 +75,43 @@ const Portfolio = () => {
  
 
   return (
-    <div className="services rounded-[56px] h-[1000px] bg-customGray mt-[127px]">
-      <div className="flex flex-row ml-48 pt-24">
-        <div className="flex flex-col">
-          <h1 className="text-5xl text-white">Let"s Have a Look at</h1>
-          <h1 className="float-right text-5xl text-orange-600 mt-5"> my Portfolio</h1>
+    <div className="services relative rounded-[56px] h-[1150px] xl:h-[1000px] bg-customGray xl:mt-[127px] mt-14 ">
+      <div className="flex xl:flex-row flex-col xl:ml-48 text-center xl:pt-24 pt-14">
+        <div className="xl:flex xl:flex-col block xl:text-start gap-2 xl:gap-0 ">
+          <h1 className="xl:text-5xl text-3xl text-white">Let's Have a Look at</h1>
+          <h1 className="xl:float-right xl:text-5xl text-3xl text-orange-600 xl:mt-5 mt-2"> my Portfolio</h1>
         </div>
-        <div>
+        <div className="-ml-[270px] xl:ml-8">
           <CustomButtonGroup mainbuttonColor="white" subbuttonColor="#3D3F3C" iconTextColor={"white"} content="View All My Work"/>
         </div>
       </div>
 
-      <Slider {...settings}  className="mt-10 ml-16 pl-6" >
-          {images.map((image, index) => (
-            <div key={index}>
-              <Image alt={image.alt} width={580} height={90} src={image.src} className="border-customlightGray h-[400px] rounded-[30px] border-[10px]" />
-            </div>
-          ))}
+      <div className="overflow-hidden">
+        <Slider {...settings}  className="flex flex-row mt-10 xl:ml-16 xl:pl-6 -ml-[60px] w-[600px] xl:w-auto" >
+            {images.map((image, index) => (
+              <div key={index}>
+                <Image alt={image.alt} width={580} height={90} src={image.src} className="border-customlightGray xl:h-[400px] h-[350px] rounded-[30px] border-[10px]" />
+              </div>
+            ))}
         </Slider>
+      </div>
 
-        <div className="flex flex-row justify-center gap-4 ml-12">
+
+        <div className="flex flex-row justify-center gap-4 xl:ml-12">
                 {portfolioitems.map((item,index)=>(
                     <Button key={index} variant={"secondary"} className="rounded-3xl mt-8">{item}</Button>
                 ))}
         </div>
-        <div className="flex flex-row justify-center mt-10 ml-14 text-white text-3xl">
+        <div className="flex xl:flex-row flex-col justify-center mt-10 xl:ml-14 text-center items-center text-white xl:text-3xl text-2xl pr-4">
           <h1>Investiaa- Your Startup Ideas Ideal Platform</h1>
           
-          <Button className="rounded-full h-14 w-14 ml-10 -mt-3 bg-orange-600">
+          <Button className="rounded-full h-14 w-14 xl:ml-10 xl:-mt-3 mt-8 bg-orange-600">
             <FontAwesomeIcon icon={faArrowRight} className="text-white h-6 transform -rotate-45"/>
           </Button>
 
         </div>
-       <div className="flex flex-row justify-center items-center mt-4 ml-20">
-        <p className="w-[900px] text-gray-300 text-center">
+       <div className="flex flex-row justify-center items-center mt-4 xl:ml-20">
+        <p className="xl:w-[900px] w-full pl-6 pr-6 xl:p-0 text-gray-300 text-center">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corrupti odio cupiditate animi facilis aut reprehenderit doloribus ex, eaque iusto asperiores voluptatibus autem possimus officia unde nihil, sed, ea itaque?
         </p>
        </div> 

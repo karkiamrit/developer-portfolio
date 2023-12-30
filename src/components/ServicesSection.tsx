@@ -17,17 +17,17 @@ import Image from "next/image"
 function ServicesSection() {
   return (
     <div className={crimson.className}>
-      <div className="services rounded-[56px] h-[800px] bg-customGray mt-[127px]">
-        <div className="flex flex-row ml-48 h-full pt-32 ">
+      <div className="services rounded-[56px] h-[1800px] xl:h-[800px] bg-customGray xl:mt-[127px] mt-14">
+        <div className="flex flex-row justify-center xl:ml-32  h-full xl:pt-32 pt-16 ">
           <h1 className="text-5xl text-white">My</h1>
           <h1 className="float-right ml-5 text-5xl text-red-500"> Services</h1>
-          <p className="w-96 text-gray-300 ml-[520px] font-sans font-normal">Lorem ipsum dolor sit amet consectetur itss adipisicing elit. Velit accusantium sunt facilis.</p>
+          <p className="hidden xl:block xl:w-96 xl:text-gray-300 xl:ml-[520px] xl:font-sans xl:font-normal">Lorem ipsum dolor sit amet consectetur itss adipisicing elit. Velit accusantium sunt facilis.</p>
 
         </div>
-        <div className="border-t border-gray-500 w-[1160px] ml-48 -mt-[580px]" />
+        <div className="border-t border-gray-500 w-full xl:w-[1160px] xl:ml-48 xl:-mt-[580px] -mt-[1640px]" />
 
-        <div className="flex flex-row gap-5">
-          <Card className="relative rounded-3xl w-[370px] ml-48 mt-16 bg-customlightGray border-none transform transition-transform hover:scale-105 focus:scale-105">
+        <div className="flex xl:flex-row items-center flex-col gap-5">
+          <Card className="relative rounded-3xl w-[370px] xl:ml-48 mt-16 bg-customlightGray border-none transform transition-transform hover:scale-105 focus:scale-105">
             <CardHeader>
               <CardTitle className="flex flex-row mb-2 mt-7 text-orange-600 text-4xl font-medium h-12">
                   Frontend

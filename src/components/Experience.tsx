@@ -19,19 +19,19 @@ const Experience = () => {
 
     return (
         <div className={crimson.className}>
-            <div className="relative experience">
-                <div className="flex flex-row items-center justify-center mt-10 text-4xl gap-2">
+            <div className="relative experience overflow-hidden">
+                <div className="hidden xl:flex flex-row items-center justify-center mt-10 text-4xl gap-2">
                     <h1 className="text-gray-900">My</h1>
                     <h1 className="text-orange-600">Education </h1>
                     <h1 className="text-black-900">& </h1>
                     <h1 className="text-orange-600">Work Experience</h1>
                 </div>
-                <div className="flex flex-row gap-16">
-                    <div className="relative flex flex-col ml-48 mt-10 text-3xl max-w-[520px]">
-                        <h2 className="text-orange-500">Education</h2>
-                        <DropdownMenuSeparator className="w-[510px] bg-gray-300 h-[1.5px]" />
+                <div className="flex xl:flex-row flex-col xl:gap-16 mt-10 xl:mt-0">
+                    <div className="relative flex flex-col xl:ml-48 mt-10 text-3xl max-w-[520px]">
+                        <h2 className="text-orange-500 text-center xl:text-start">Education</h2>
+                        <DropdownMenuSeparator className="xl:w-[510px] sm:w-full bg-gray-300 h-[1.5px]" />
                         {educations.map((education, index) => (
-                            <div key={index} className="flex flex-col mt-4 font-serif">
+                            <div key={index} className="flex flex-col mt-4 font-serif pl-5 pr-5 xl:p-0">
                                 <div className="flex flex-row gap-4 items-center">
                                     <h2 className="font-extralight text-2xl">{education.name}</h2>
                                     <div className="ml-auto"> {/* This div will push the button to the right */}
@@ -47,10 +47,10 @@ const Experience = () => {
                         ))}
                     </div>
                     <div className="relative flex flex-col mt-10 text-3xl">
-                        <h2 className="text-orange-500">Work Experience</h2>
-                        <DropdownMenuSeparator className="w-[510px] bg-gray-300 h-[1.5px]" />
+                        <h2 className="text-orange-500 text-center xl:text-start">Work Experience</h2>
+                        <DropdownMenuSeparator className="xl:w-[510px] w-full bg-gray-300 h-[1.5px]" />
                         {experiences.map((experience, index) => (
-                            <div key={index} className="flex flex-col mt-4 font-serif">
+                            <div key={index} className="flex flex-col mt-4 font-serif pl-5 pr-5 xl:p-0">
                                 <div className="flex flex-row gap-4 items-center">
                                     <h2 className="font-extralight text-2xl">{experience.name}</h2>
                                     <div className="ml-auto"> {/* This div will push the button to the right */}

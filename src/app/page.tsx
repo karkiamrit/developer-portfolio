@@ -18,8 +18,6 @@ function page({}: Props) {
       <Portfolio/>
       <WorkingProcess/>
       <Contact/>
-      
-      
     </>
   )
 }
