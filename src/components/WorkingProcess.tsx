@@ -16,12 +16,12 @@ const WorkingProcess = () => {
                 </h1>
             </div>
             <div className="flex xl:flex-row flex-col xl:gap-4 gap-10 text-2xl mt-10 font-semibold items-center justify-center ml-4">
-                <div className="flex flex-col justify-center gap-2 xl:ml-44 ">
+                <div className="flex flex-col justify-center gap-2 xl:ml-10  ">
                     <Button className=" w-16 h-16 ml-36 rounded-full bg-customGray">
                         <FontAwesomeIcon icon={faLightbulb} fade className="text-3xl w-20"/>
                     </Button>
                     <h2 className="ml-24 mt-2">Design Strategy</h2>
-                    <p className="w-96 text-sm text-gray-500 font-light text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. quas, alias ipsa corporis eaque officiis sed minima nesciunt cum cumque fugiat minus autem architecto.</p>
+                    <p className="w-96 text-sm text-gray-500 font-light text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. quas, alias ipsa corporis eaque officiis sed minima nesciunt cum cumque fugiat minus autem architecto.</p>
                 </div>    
                 <div className="flex flex-col justify-center gap-2">
                     <Button className="w-16 h-16 ml-36 rounded-full bg-customGray">
@@ -39,7 +39,7 @@ const WorkingProcess = () => {
                 </div> 
                 
             </div> 
-            <Image alt="image" width={80} height={300} src="/images/working/right-arrow.png" className="hidden xl:block z-20 ml-[540px] -mt-[180px]"/> 
+            <Image alt="image" width={80} height={300} src="/images/working/right-arrow.png" className="hidden xl:block z-20 ml-[510px] -mt-[180px]"/> 
             <Image alt="image" width={80} height={300} src="/images/working/right-arrow.png" className="hidden xl:block z-20 ml-[940px] -mt-[80px]"/>   
         </div>
     )

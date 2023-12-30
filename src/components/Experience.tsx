@@ -19,7 +19,7 @@ const Experience = () => {
 
     return (
         <div className={crimson.className}>
-            <div className="relative experience overflow-hidden">
+            <div className="relative experience overflow-hidden xl:ml-12">
                 <div className="hidden xl:flex flex-row items-center justify-center mt-10 text-4xl gap-2">
                     <h1 className="text-gray-900">My</h1>
                     <h1 className="text-orange-600">Education </h1>
