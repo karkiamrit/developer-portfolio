@@ -11,7 +11,7 @@ const crimson= Crimson_Text({ subsets: ["latin"],weight: "400" })
 function HeroSection() {
     return (
         <div className={crimson.className}>
-        <div className="relative hero h-full flex items-center overflow-hidden xl:overflow-visible justify-center">
+        <div className="relative hero h-full flex items-center overflow-hidden xl:overflow-visible justify-center xl:justify-start">
             {/* Vertical Lines */}
             {Array.from({ length: 20   }).map((_, index) => (
                 <div

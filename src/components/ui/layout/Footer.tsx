@@ -21,7 +21,7 @@ const Footer = () => {
                         <h1 className="text-gray-100">there</h1>
 
                     </div>
-                    <div className="xl:mt-10 xl:ml-12 -ml-[370px] flex justify-center">
+                    <div className="xl:mt-10 xl:ml-12  flex justify-center">
                         <CustomButtonGroup mainbuttonColor="white" subbuttonColor="#3D3F3C" iconTextColor={"white"} content="View All My Work" />
                     </div>
                 </div>

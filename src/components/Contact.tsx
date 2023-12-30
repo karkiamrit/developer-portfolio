@@ -15,7 +15,7 @@ const Contact = () => {
                 <div>
                     <div className="flex flex-row xl:ml-48 justify-center xl:mt-10 mt-16">
                         <div className="flex flex-col">
-                            <div className="flex flex-row xl:text-4xl gap-2 font-medium xl:-mt-32 text-3xl">
+                            <div className="flex flex-row lg:text-4xl gap-2 font-medium xl:-mt-32 text-3xl">
                                 <h1 className="text-gray-800">Let's</h1>
                                 <h1 className="text-orange-500">Connect</h1>
                                 <h1 className="">&</h1>

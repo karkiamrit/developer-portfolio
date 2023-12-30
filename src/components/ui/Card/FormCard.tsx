@@ -130,8 +130,8 @@ const FormCard = () => {
                             <FormMessage />
                         </FormItem>
                     )} />
-                <div className="-ml-[330px] pb-10"> 
-                    <CustomButtonGroup subbuttonColor="white" mainbuttonColor="#424242" iconTextColor="#424242" content="Send Message"/>  
+                <div className="pb-10 flex justify-center "> 
+                    <CustomButtonGroup subbuttonColor="white" mainbuttonColor="#424242" iconTextColor="#424242" content="Contact"/>  
                 </div>    
                  
 

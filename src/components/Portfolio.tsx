@@ -36,7 +36,7 @@ const Portfolio = () => {
             breakpoint: 600,
             settings: {
               vertical:true,
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 1,
               initialSlide: 2
             }
@@ -81,7 +81,7 @@ const Portfolio = () => {
           <h1 className="xl:text-5xl text-3xl text-white">Let's Have a Look at</h1>
           <h1 className="xl:float-right xl:text-5xl text-3xl text-orange-600 xl:mt-5 mt-2"> my Portfolio</h1>
         </div>
-        <div className="-ml-[270px] xl:ml-8">
+        <div className="xl:ml-8 flex justify-center">
           <CustomButtonGroup mainbuttonColor="white" subbuttonColor="#3D3F3C" iconTextColor={"white"} content="View All My Work"/>
         </div>
       </div>
