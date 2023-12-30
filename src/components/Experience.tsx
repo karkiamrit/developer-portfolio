@@ -27,7 +27,7 @@ const Experience = () => {
                     <h1 className="text-orange-600">Work Experience</h1>
                 </div>
                 <div className="flex xl:flex-row flex-col xl:gap-16 mt-10 xl:mt-0">
-                    <div className="relative flex flex-col xl:ml-48 mt-10 text-3xl max-w-[520px]">
+                    <div className="relative flex flex-col xl:ml-48 mt-10 text-3xl ">
                         <h2 className="text-orange-500 text-center xl:text-start">Education</h2>
                         <DropdownMenuSeparator className="xl:w-[510px] sm:w-full bg-gray-300 h-[1.5px]" />
                         {educations.map((education, index) => (
@@ -46,9 +46,9 @@ const Experience = () => {
                             </div>
                         ))}
                     </div>
-                    <div className="relative flex flex-col mt-10 text-3xl">
+                    <div className="relative flex flex-col mt-10 text-3xl ">
                         <h2 className="text-orange-500 text-center xl:text-start">Work Experience</h2>
-                        <DropdownMenuSeparator className="xl:w-[510px] w-full bg-gray-300 h-[1.5px]" />
+                        <DropdownMenuSeparator className="xl:w-[510px] sm:w-full bg-gray-300 h-[1.5px]" />
                         {experiences.map((experience, index) => (
                             <div key={index} className="flex flex-col mt-4 font-serif pl-5 pr-5 xl:p-0">
                                 <div className="flex flex-row gap-4 items-center">

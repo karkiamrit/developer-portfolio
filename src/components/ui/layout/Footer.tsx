@@ -21,22 +21,33 @@ const Footer = () => {
                         <h1 className="text-gray-100">there</h1>
 
                     </div>
-                    <div className="xl:mt-10 xl:ml-12 -ml-[270px]">
+                    <div className="xl:mt-10 xl:ml-12 -ml-[370px] flex justify-center">
                         <CustomButtonGroup mainbuttonColor="white" subbuttonColor="#3D3F3C" iconTextColor={"white"} content="View All My Work" />
                     </div>
                 </div>
-                <Separator className="mt-10 xl:w-[1150px] w-full bg-customlightGray h-[2px]" />
+                <Separator className="mt-10 xl:w-[1170px] w-full bg-customlightGray h-[2px]" />
                 <div className="flex xl:flex-row flex-col">
-                    <div className="flex xl:flex-col flex-row xl:gap-4 gap-2 mt-10 xl:items-start xl:justify-start xl:text-start items-center text-center justify-center pl-8 xl:pl-0">
-                        <div className="flex flex-row gap-4">
-                            <Image src="/images/navigation/logo.png" alt="Logo" width={50} height={50} />
-                            <h1 className="text-white xl:mt-5 hover:text-orange-600 bottom-2 left-10 hidden xl:block text-3xl font-serif">mrit</h1>
+                    <div className="flex flex-col xl:gap-4 gap-2 mt-10 xl:items-start xl:justify-start xl:text-start items-center text-center justify-center pl-8 xl:pl-0">
+                        <div className="flex xl:flex-row flex-col gap-4">
+                            <div className="flex flex-row gap-2 justify-center text-center items-center mr-16 xl:mr-0">
+                                <Image src="/images/navigation/logo.png" alt="Logo" width={50} height={50} />
+                                <h1 className="text-white xl:mt-5 hover:text-orange-600 bottom-2 left-10 xl:block text-3xl font-serif pt-7 xl:pt-0">mrit</h1>
+                            </div>
+                            
+                            <div className="relative flex flex-row xl:mt-6 z-2 gap-2 xl:ml-0 mr-10 xl:mr-0 justify-center z-10">
+                                <SocialMediaIcon icon={faHashtag}/>
+                                <SocialMediaIcon icon={faRetweet}/>
+                                <SocialMediaIcon icon={faShareNodes}/>
+                                <SocialMediaIcon icon={faUsers}/>
+                                <SocialMediaIcon icon={faVideo}/>
+                            </div>
                         </div>
-                        <p className="relative w-96 xl:mt-5 text-gray-400 font-normal text-start xl:ml-0 ml-8">
+                        <p className="relative w-[400px] mt-5 text-gray-400 font-normal text-start xl:ml-0 ml-8">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi architecto similique officiis tempora placeat eaque veritatis?
                         </p>
+                       
                     </div>
-                    <div className="flex flex-col xl:mt-12 xl:ml-12 mt-28 items-center xl:items-start">
+                    <div className="flex flex-col mt-12 xl:ml-12 items-center xl:items-start">
                         <h2 className="text-orange-600 text-xl">Navigation</h2>
                         <Link href="/"className="mt-5 text-gray-300 text-medium hover:text-orange-500">Home</Link>
                         <Link href="/about"className="mt-5 text-gray-300 text-medium hover:text-orange-500">About Me</Link>
@@ -62,13 +73,7 @@ const Footer = () => {
                         
                     </div>
                 </div>
-                <div className="absolute flex flex-row xl:mt-[420px] mt-[380px] gap-2 ml-32 xl:ml-0 pt-2 ">
-                    <SocialMediaIcon icon={faHashtag}/>
-                    <SocialMediaIcon icon={faRetweet}/>
-                    <SocialMediaIcon icon={faShareNodes}/>
-                    <SocialMediaIcon icon={faUsers}/>
-                    <SocialMediaIcon icon={faVideo}/>
-                </div>
+                
 
             </div>
             <Separator className="mt-10 xl:w-[1160px] w-full bg-customlightGray h-[2px] xl:ml-48" />

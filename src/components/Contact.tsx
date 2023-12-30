@@ -22,10 +22,10 @@ const Contact = () => {
                                 <h1 className="xl:hidden font-medium text-orange-500">Collaborate</h1>
                             </div>
                             <h1 className="hidden xl:block text-4xl font-medium mt-2 text-orange-500" >Collaborate</h1>
-                            <p className="mt-5 w-[400px] text-start text-gray-500 font-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur. </p>
+                            <p className="mt-5 w-[400px] text-center text-gray-500 font-normal ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur. </p>
                         </div>
                     </div>
-                    <div className="flex flex-col xl:ml-48 ml-6 xl:items-start">
+                    <div className="flex flex-col xl:ml-48 ml-20 xl:items-start">
                         <div className="flex flex-row mt-8">
                             <Button variant="secondary" className="rounded-full h-12 w-12 bg-gray-100 pointer-events-none">
                                 <FontAwesomeIcon icon={faPhone} className="text-orange-500 h-5" />
@@ -52,7 +52,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className="xl:ml-[70px] bg-customlightGray xl:w-[700px] w-full rounded-[40px] bg-opacity-5 mt-10 xl:mt-0">
+                <div className="xl:ml-[70px] bg-customlightGray xl:w-[700px] w-full rounded-[40px] bg-opacity-5 mt-10 xl:mt-0 flex justify-center xl:justify-start">
                     <FormCard />
                 </div>
             </div>

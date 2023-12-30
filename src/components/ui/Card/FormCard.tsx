@@ -58,13 +58,13 @@ const FormCard = () => {
     }
     return (
         <Form {...form}>
-            <form onChange={form.handleSubmit(onSubmit)} className="w-2/3 space-y-6">
-                <div className="flex flex-row gap-5">
+            <form onChange={form.handleSubmit(onSubmit)} className="w-2/3 space-y-6 ">
+                <div className="flex flex-row gap-5 justify-center xl:justify-start">
                     <FormField 
                         control={form.control}
                         name="firstname"
                         render={({ field }) => (
-                            <FormItem className="mt-10 ml-[50px]">
+                            <FormItem className="mt-10 xl:ml-[50px] ">
                                 <FormControl>
                                     <Input type="string" placeholder="First Name*" {...field} className="bg-white xl:h-16 h-10 xl:w-72 w-48 rounded-[25px] pl-4 " />
                                 </FormControl>
@@ -84,12 +84,12 @@ const FormCard = () => {
                             </FormItem>
                         )} />
                 </div>
-                <div className="flex flex-row gap-5">
+                <div className="flex flex-row gap-5 justify-center xl:justify-start">
                     <FormField
                         control={form.control}
                         name="email"
                         render={({ field }) => (
-                            <FormItem className="ml-[50px]">
+                            <FormItem className="xl:ml-[50px]">
                                 <FormControl>
                                     <Input type="string" placeholder="Email*" {...field} className="bg-white xl:h-16 h-10 xl:w-72 w-48 rounded-[25px] pl-4 " />
                                 </FormControl>
@@ -112,9 +112,9 @@ const FormCard = () => {
                     control={form.control}
                     name="subject"
                     render={({ field }) => (
-                        <FormItem className="ml-[50px]">
+                        <FormItem className="xl:ml-[50px] flex justify-center xl:justify-start">
                             <FormControl>
-                                <Input type="string" placeholder="Subject*" {...field} className="bg-white xl:w-[596px] xl:h-16 h-10 w-[405px]  rounded-[25px] pl-4 " />
+                                <Input type="string" placeholder="Subject*" {...field} className="bg-white xl:w-[596px] xl:h-16 h-10 w-[405px] rounded-[25px] pl-4 " />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
@@ -123,7 +123,7 @@ const FormCard = () => {
                     control={form.control}
                     name="message"
                     render={({ field }) => (
-                        <FormItem className="ml-[50px] ">
+                        <FormItem className="xl:ml-[50px] flex justify-center xl:justify-start">
                             <FormControl>
                                 <TextArea placeholder="Message*"  {...field} className="bg-white h-36 xl:w-[596px] w-[405px] rounded-[25px] pl-4 pt-5 resize-none" />
                             </FormControl>
