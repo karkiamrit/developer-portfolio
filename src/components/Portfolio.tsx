@@ -26,7 +26,8 @@ const Portfolio = () => {
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 2,
+              vertical:true,
+              slidesToShow: 1,
               slidesToScroll: 1,
               infinite: true,
               dots: true
@@ -86,8 +87,8 @@ const Portfolio = () => {
         </div>
       </div>
 
-      <div className="overflow-hidden">
-        <Slider {...settings}  className="flex flex-row mt-10 xl:ml-16 xl:pl-6 -ml-[60px] w-[600px] xl:w-auto" >
+      <div className="overflow-hidden sm:ml-20 md:ml-0 flex justify-center">
+        <Slider {...settings}  className="flex flex-row mt-10  xl:pl-6  w-[600px] xl:w-auto" >
             {images.map((image, index) => (
               <div key={index}>
                 <Image alt={image.alt} width={580} height={90} src={image.src} className="border-customlightGray xl:h-[400px] h-[350px] rounded-[30px] border-[10px]" />
